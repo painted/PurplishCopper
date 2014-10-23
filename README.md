@@ -1,28 +1,32 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Initial Concepts:
 
-Things you may want to cover:
+User Login with Omniauth and Devise
+  * Facebook
+  * Twitter
+  * Instagram
+  * Facebook Pages
+  * Extension:
+    * Soundcloud
+    * Bandpage
+    * etc
 
-* Ruby version
+Admin Login
+  * User index
 
-* System dependencies
+User can:
+  * Login
+  * Login with social medias listed above
+  * Authorize all listed social media accounts
+  * Write a post with:
+    * Title
+    * Description
+    * Photos
+  * View post in user/post index
+  * Preview possible layouts
+  
+Extension:
+  * Twitter keyword feed
+  * Facebook keyword feed
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
