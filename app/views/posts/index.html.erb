@@ -1,8 +1,11 @@
 
 <% if @posts.any? %>
 	<% @posts.each do |post| %>
-		<p><%= post.title %>
-		<p><%= post.description %>
+		<p><%= post.title %></p>
+		<p><%= post.description %></p>
+		<% if post.image.present? %>
+			<p><%= image_tag post.image.url(:thumb), class: 'uploaded-pic' %></p>
+		<% end %>
 	<% end %>
 <% else %>
 	no posts yet.
