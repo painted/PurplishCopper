@@ -14,7 +14,7 @@ describe 'posts' do
 				expect(page).to have_content 'no posts yet.'
 			end
 
-			it 'can create a post' do 
+			it 'can create a post.' do 
 				visit '/users/1/posts/new' 
 				fill_in 'Title', with: 'Test Title'
 				fill_in 'Description', with: 'Test Description'
