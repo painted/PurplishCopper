@@ -4,7 +4,9 @@ require 'spec_helper'
 require File.expand_path("../../config/environment", __FILE__)
 require 'capybara/rspec'
 require 'rspec/rails'
-
+require 'aws'
+AWS.stub!
+AWS.config(:access_key_id => "TESTKEY", :secret_access_key => "TESTSECRET")
 
 # Add additional requires below this line. Rails is not loaded until this point!
 
