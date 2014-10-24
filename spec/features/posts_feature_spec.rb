@@ -1,6 +1,14 @@
 require 'rails_helper'
 
 describe 'posts' do
+	context 'unsigned in user' do
+		it 'is redirected to the login page before posting.' do
+			visit '/'
+			click_link 'Add a post!'
+			expect(page).to have_content 'You need to sign in or sign up before continuing.'
+		end
+	end
+
 	context 'user signed up and logged in.' do 
 		context 'post listing and adding' do
 
@@ -10,8 +18,7 @@ describe 'posts' do
 			end
 
 			it 'has no posts initially.' do
-				visit "users/1/posts"
-				expect(page).to have_content 'no posts yet.'
+				expect(user.posts.count).to equal 1
 			end
 
 			it 'can create a post.' do 

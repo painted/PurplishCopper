@@ -1,1 +1,4 @@
 <h1>Welcome to Purplish Copper</h1>
+<% if user_signed_in? %>
+<%= link_to 'Add a post!', "users/#{current_user.id}/posts/new" %>
+<% end %>
