@@ -30,4 +30,5 @@ Extension:
   * Twitter keyword feed
   * Facebook keyword feed
 
-Developers please view [this doc](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches) for info on branching.
+####Git info
+Developers please view [this doc](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches) for info on Git branching.  More in-depth info can be found [here](https://www.atlassian.com/git/tutorials/using-branches)
