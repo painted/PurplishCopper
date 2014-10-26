@@ -1,5 +1,7 @@
 ### README
 
+Please view [this doc](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches) for info on branching.
+
 Initial Concepts:
 
 User Login with Omniauth and Devise
