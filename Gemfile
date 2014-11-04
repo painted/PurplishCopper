@@ -38,6 +38,7 @@ gem 'omniauth-twitter'
 
 gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 
+gem 'thin'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -52,4 +53,8 @@ gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 group :test, :development do
 	gem 'rspec-rails'
 	gem 'capybara'
+	gem 'database_cleaner'
+	gem 'poltergeist'
+	gem 'byebug'
+	gem 'launchy'
 end

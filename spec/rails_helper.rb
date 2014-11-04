@@ -5,6 +5,12 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'capybara/rspec'
 require 'rspec/rails'
 require 'aws'
+require 'capybara/poltergeist'
+Capybara.javascript_driver = :poltergeist
+Capybara.server do |app, port|
+  require 'rack/handler/thin'
+  Rack::Handler::Thin.run(app, :Port => port)
+end
 AWS.stub!
 AWS.config(:access_key_id => "TESTKEY", :secret_access_key => "TESTSECRET")
 
